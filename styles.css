@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+:root {
+  --xxs-size: 0.6rem;
+  --xs-size: 1.2rem;
+  --s-size: 1.6rem;
+  --sm-size: 2.4rem;
+  --m-size: 3.2rem;
+  --ml-size: 4rem;
+  --l-size: 4.8rem;
+  --xl-size: 7.2rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: 'Space Mono', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.btn {
+  border-radius: 5rem;
+  display: inline-block;
+  padding: 1rem 2.4rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: var(--m-size);
+  margin: var(--s-size);
+  text-decoration: none;
+}
+
+.btn--primary {
+  background: #1675ce;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  color: #85cae5;
+}
+
+.header {
+  background: url(public/header-background.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.header * {
+  z-index: 1;
+}
+
+.header::before {
+  background: rgba(255, 255, 255, 0.3);
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header--inherit-height {
+  height: 100%;
+}
+
+.header__flex {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 var(--m-size);
+}
+
+.header__flex--right-border {
+  border-right: 0.6rem solid #1675ce;
+  padding-right: 2rem;
+}
+
+.header__name {
+  font-size: var(--xl-size);
+}
+
+.header__title {
+  font-weight: 900;
+  font-size: var(--l-size);
+  margin-bottom: var(--m-size);
+}
+
+.header__subtitle {
+  font-size: var(--m-size);
+}
+
+.header__subtitle:last-of-type {
+  margin-bottom: var(--m-size);
+}
+
+.header__paragraph {
+  font-size: var(--sm-size);
+}
+
+.header__paragraph a {
+  color: #85cae5;
+  text-decoration: none;
+}
+
+.header__down-arrow {
+  position: absolute;
+  color: #1675ce;
+  bottom: 2rem;
+  font-size: var(--l-size);
+  left: 50%;
+}
+
+#skills {
+  background: #0f4d86;
+  color: #fff;
+  padding: var(--xl-size) 0;
+  text-align: center;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex--no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex--text-align-left {
+  text-align: left;
+}
+
+.skills__item {
+  width: 15rem;
+  margin: 0 var(--s-size);
+}
+
+.experiences {
+  background: #1675ce;
+  color: #fff;
+  padding: var(--xl-size) 0;
+  text-align: center;
+}
+
+.experiences__entry {
+  margin: var(--l-size) 0;
+}
+
+.experiences__icon-container {
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  font-size: var(--m-size);
+  height: 25rem;
+  margin: var(--l-size);
+  padding: var(--s-size);
+  overflow: hidden;
+  width: 25rem;
+}
+
+.experiences__icon-container--zoom {
+  transition: all 0.1s ease-in-out;
+}
+
+.experiences__icon-container--zoom:hover {
+  transform: scale(1.1);
+}
+
+.experiences__icon-container a {
+  color: #fff;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  text-decoration: none;
+}
+
+.experiences__icon-container--financial {
+  background: url(/public/tg-financial-wealth-management.jpg) no-repeat;
+  background-size: cover;
+}
+
+.experiences__icon-container--conference {
+  background: url(/public/conference-manager.jpg) no-repeat;
+  background-size: cover;
+}
+
+.experiences__icon-container--workshop {
+  background: url(/public/workshop.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.experiences__icon {
+  margin: 0 auto;
+  /* margin-left: -25%; */
+  height: auto;
+  width: 100%;
+}
+
+.cta {
+  background: #0f4d86;
+  color: #fff;
+  padding: var(--xl-size) 0;
+  text-align: center;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  font-size: var(--s-size);
+  padding: var(--l-size);
+  text-align: right;
+}
