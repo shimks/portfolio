@@ -53,6 +53,7 @@ html {
   background-size: cover;
   height: 100vh;
   position: relative;
+  text-align: right;
 }
 
 .header * {
@@ -222,4 +223,53 @@ html {
   font-size: var(--s-size);
   padding: var(--l-size);
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: var(--s-size);
+    margin: var(--xxs-size) 0;
+  }
+
+  .header__flex {
+    margin: 0 var(--xs-size);
+  }
+
+  .header__name {
+    font-size: var(--l-size);
+    margin: 0 var(--s-size);
+  }
+
+  .header__title {
+    font-size: var(--m-size);
+    margin: 0 var(--s-size);
+  }
+
+  .header__subtitle {
+    font-size: var(--sm-size);
+    margin: 0 var(--s-size);
+  }
+
+  .header__paragraph {
+    font-size: var(--s-size);
+    margin: 0 var(--s-size);
+  }
+
+  .header__down-arrow {
+    display: none;
+  }
+
+  .skills__item {
+    width: 10rem;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .experiences__icon-container {
+    height: 15rem;
+    font-size: var(--s-size);
+    width: 15rem;
+  }
 }
