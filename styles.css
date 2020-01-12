@@ -49,8 +49,7 @@ html {
 }
 
 .header {
-  background: url(public/header-background.jpg) no-repeat center center;
-  background-size: cover;
+  background: url(public/header-background.jpg) no-repeat center center/cover;
   height: 100vh;
   position: relative;
   text-align: right;
@@ -189,18 +188,16 @@ html {
 }
 
 .experiences__icon-container--financial {
-  background: url(/public/tg-financial-wealth-management.jpg) no-repeat;
-  background-size: cover;
+  background: url(/public/tg-financial-wealth-management.jpg) no-repeat center
+    center/cover;
 }
 
 .experiences__icon-container--conference {
-  background: url(/public/conference-manager.jpg) no-repeat;
-  background-size: cover;
+  background: url(/public/conference-manager.jpg) no-repeat center center/cover;
 }
 
 .experiences__icon-container--workshop {
-  background: url(/public/workshop.jpg) no-repeat center;
-  background-size: cover;
+  background: url(/public/workshop.jpg) no-repeat center center/cover;
 }
 
 .experiences__icon {
