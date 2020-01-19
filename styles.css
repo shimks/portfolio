@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
 
 :root {
   --xxs-size: 0.6rem;
@@ -17,7 +17,7 @@
 }
 
 html {
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -61,7 +61,7 @@ html {
 
 .header::before {
   background: rgba(255, 255, 255, 0.3);
-  content: '';
+  content: "";
   height: 100%;
   position: absolute;
   top: 0;
@@ -182,22 +182,24 @@ html {
 
 .experiences__icon-container a {
   color: #fff;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
-    2px 2px 0 #000;
+  font-weight: bold;
   text-decoration: none;
 }
 
 .experiences__icon-container--financial {
-  background: url(/public/tg-financial-wealth-management.jpg) no-repeat center
-    center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/public/tg-financial-wealth-management.jpg) no-repeat center
+      center/cover;
 }
 
 .experiences__icon-container--conference {
-  background: url(/public/conference-manager.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/public/conference-manager.jpg) no-repeat center center/cover;
 }
 
 .experiences__icon-container--workshop {
-  background: url(/public/workshop.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/public/workshop.jpg) no-repeat center center/cover;
 }
 
 .experiences__icon {
